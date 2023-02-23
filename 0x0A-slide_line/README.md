@@ -13,3 +13,15 @@ Given an array of integers, we want to be able to slide & merge it to the left o
         - Both macros SLIDE_LEFT and SLIDE_RIGHT must be defined in slide_line.h
     - Your function must return 1 upon success, or 0 upon failure
     - You are not allowed to allocate memory dynamically (malloc, calloc, …)
+
+## **How to compile:**
+
+    $ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -o 0-slide_line 0-slide_line.c 0-main.c
+
+## **How to run:**
+
+        $ ./0-slide_line L 2 2 0 0
+        4 0 0 0
+
+        $ ./0-slide_line R 2 2 2 2 2
+        0 0 0 2 4 4
