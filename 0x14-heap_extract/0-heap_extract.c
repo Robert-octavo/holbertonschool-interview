@@ -1,6 +1,22 @@
 #include "binary_trees.h"
 
 /**
+ * heap_size - get size of heap
+ * @root: root of heap
+ * Return: size of heap
+ */
+
+int heap_size(heap_t *root)
+{
+	int size = 0;
+
+	if (!root)
+		return (0);
+	size = heap_size(root->left) + heap_size(root->right) + 1;
+	return (size);
+}
+
+/**
  * get_last_node - get last node in heap
  * @root: root of heap
  * Return: last node
