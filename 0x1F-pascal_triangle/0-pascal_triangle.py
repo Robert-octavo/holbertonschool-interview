@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Solves the pascal triangle problem"""
+"""Solves the pascal triangle problem """
 
 
 def pascal_triangle(n):
